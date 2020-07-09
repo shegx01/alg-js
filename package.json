@@ -1,0 +1,12 @@
+{
+  "name": "algo-retouched",
+  "version": "1.0.0",
+  "description": "intro to algo course",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn test"
+
+  },
+  "author": "O O Samson",
+  "license": "MIT"
+}
