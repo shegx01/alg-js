@@ -31,12 +31,18 @@ function sentinelLS(arr, item) {
   //   }
   //   return "NOT_FOUND"
 
-  const lastArrayItem = arr[arr.length - 1]
-  if (lastArrayItem === item) return lastArrayItem
-  arr[arr.length - 1] = item
-  let idx = 0
-  while (arr[idx] !== item) idx += 1
-  if (idx < arr.length - 1) return arr[idx]
+ const lastArrayItem = arr[arr.length - 1]
+ if (lastArrayItem === item) {
+   arr[arr.length - 1] = lastArrayItem
+   return lastArrayItem
+ }
+ arr[arr.length - 1] = item
+ let idx = 0
+ while (arr[idx] !== item) idx += 1
+ if (idx < arr.length - 1) {
+   arr[arr.length - 1] = lastArrayItem
+   return arr[idx]
+ }
   return "NOT_FOUND"
 }
 
