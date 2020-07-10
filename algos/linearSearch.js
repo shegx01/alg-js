@@ -47,7 +47,7 @@ function sentinelLS(arr, item) {
 }
 
 module.exports = {
-  linearSearch: linearSearch,
-  sentinelLS: sentinelLS
+  linearSearch,
+  sentinelLS
 }
 
